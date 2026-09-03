@@ -10,9 +10,7 @@ import java.nio.file.Paths;
 
 import static java.nio.file.StandardOpenOption.CREATE;
 
-import java.io.File;
-import java.nio.file.Path;
-import java.nio.file.Paths;
+
 import java.util.Scanner;
 import java.util.ArrayList;
 
@@ -42,7 +40,7 @@ e. YearOfBirth (an int */
             ID = SafeInput.getNonZeroLenString(in, "Enter the ID [6 Digits]");
             firstName = SafeInput.getNonZeroLenString(in, "Enter your first name");
             lastName = SafeInput.getNonZeroLenString(in, "Enter your last name");
-            title = SafeInput.getNonZeroLenString(in, "Enter the titel");
+            title = SafeInput.getNonZeroLenString(in, "Enter the title");
             YOB = SafeInput.getInt(in, "Enter the birth");
 
             //  create the person object with the data
