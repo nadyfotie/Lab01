@@ -75,7 +75,7 @@ public class Person
     }
     public String toCSV() {
         // better to use a StringBuffer to concatenate the CSV record
-        String ret = this.ID + "'" + this.firstName + ", " + this.lastName + ", " + this.title + ", " + this.YOB;
+        String ret = this.ID + ", " + this.firstName + ", " + this.lastName + ", " + this.title + ", " + this.YOB;
         return ret;
     }
     @Override
