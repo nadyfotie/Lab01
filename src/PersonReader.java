@@ -28,7 +28,7 @@ public class PersonReader {
                     String rec;
                     System.out.printf("%-8s%-15s%-15s%-10s%6s%n",
                             "ID#", "firstname", "lastName", "title", "YOB");
-                    System.out.println("=========================================================");
+                    System.out.println("========================================================");
                     while (reader.ready()) {
                         rec = reader.readLine();
                         String[] fields = rec.split(",");

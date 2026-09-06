@@ -6,11 +6,11 @@ public class Product {
     private String Description;
     private Double Cost;
 // Contructor
-    public Product(String ID, String description, String name, Double cost) {
+    public Product(String ID, String name , String description, Double cost) {
         this.ID = ID;
-        Description = description;
-        Name = name;
-        Cost = cost;
+        this.Description = description;
+        this.Name = name;
+        this.Cost = cost;
     }
     //Setters and Getters
 

@@ -25,11 +25,11 @@ public class ProductReader {
                     String rec;
                     System.out.printf("%-8s%-15s%-30s%10s%n",
                             "ID#", "Name", "Description", "Cost");
-                    System.out.println("=========================================================");
+                    System.out.println("================================================================");
                     while (reader.ready()) {
                         rec = reader.readLine();
                         String[] fields = rec.split(",");
-                        if (fields.length == 5) {
+                        if (fields.length == 4) {
                             String ID = fields[0].trim();
                             String Name = fields[1].trim();
                             String Description = fields[2].trim();
