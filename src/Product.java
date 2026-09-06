@@ -57,7 +57,7 @@ public class Product {
                 '}';
     }
     public String toCSV(){
-        String ret = this.ID + "," + this.Name +  "," + this.Description +  "," + this.Cost +  ",";
+        String ret = this.ID + ", " + this.Name +  ", " + this.Description +  ", " + this.Cost;
         return ret;
     }
 

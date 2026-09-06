@@ -54,7 +54,7 @@ e. YearOfBirth (an int */
         } while (!done);
         String filename = SafeInput.getNonZeroLenString(in, "Enter the file name");
 
-        // Previously we created a CSV record for this person's data
+        // Previously  created a CSV record for this person's data
         // Write the object data to disk
         //loop though the array list and call the toCSV for each object
         File workingDirectory = new File(System.getProperty("user.dir"));
