@@ -46,7 +46,7 @@ public class ProductReader {
                     reader.close();
                 } catch (Exception e) {
                     e.printStackTrace();
-                    ;
+
                 }
             }
         }
