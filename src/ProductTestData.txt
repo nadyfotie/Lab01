@@ -1,4 +1,4 @@
-000001, Pipeweed, Long Bottom Leaf, 600.0
+737733, Nady, Student, 200.0
 000002, Lembas , Elven Wayfare Bread, 200.0
 000003, Wine, Woodland Elf WIne, 400.0
 000004, Mushrooms, Farmer Took's Finest, 125.0

@@ -8,9 +8,11 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import javax.swing.JFileChooser;
 import java.util.Scanner;
+import java.util.ArrayList;
 public class PersonReader {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
+        ArrayList<Person> people = new ArrayList<>();
         boolean continueReading = SafeInput.getYNConfirm(input, "Do you want to select the person file");
         if (continueReading) {
 
@@ -38,13 +40,22 @@ public class PersonReader {
                             String lastName = fields[2].trim();
                             String title = fields[3].trim();
                             int yob = Integer.parseInt(fields[4].trim());
-                            System.out.printf("%-8s%-15s%-15s%-10s%6d%n",
-                                    ID, firstname, lastName, title, yob);
+
+                            Person aPerson = new Person(ID, firstname, lastName, title, yob);
+                            people.add(aPerson);
+
+                            //System.out.printf("%-8s%-15s%-15s%-10s%6d%n",
+                                  //  ID, firstname, lastName, title, yob);
 
                         } else {
                             System.out.println("Found a record that may be corrupt");
                             System.out.println(rec);
                         }
+                    }
+                    for (Person p : people) {
+                        System.out.printf("%-8s%-15s%-15s%-10s%6d%n",
+                                p.getID(), p.getFirstName(), p.getLastName(),
+                                p.getTitle(), p.getYOB());
                     }
                     reader.close();
                 } catch (IOException e) {
