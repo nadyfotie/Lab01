@@ -56,12 +56,12 @@ class SafeInputObjTest {
 
     @Test
     void getRegExString() {
-        Scanner scanner = new Scanner("N\n");
+        Scanner scanner = new Scanner("Nady123\n");
         SafeInputObj input = new SafeInputObj(scanner);
 
-        boolean result = input.getYNConfirm("Are you done?");
+        String result = input.getRegExString("Enter your username", "[A-Za-z0-9]+");
 
-        assertFalse(result);
+        assertEquals("Nady123", result);
     }
 
     @Test

@@ -7,6 +7,10 @@ class ProductTest {
     void testConstructor() {
         Product product = new Product("123456", "Nady", "Cyber girl", 30.00);
 
+        assertEquals("123456", product.getID());
+        assertEquals("Nady", product.getName());
+        assertEquals("Cyber girl", product.getDescription());
+        assertEquals(30.00, product.getCost());
     }
 
     @Test
@@ -44,6 +48,8 @@ class ProductTest {
     @Test
     void toCSV() {
         Product product = new Product("123456", "Nady", "Cyber girl", 30.00);
+        assertEquals("123456, Nady, Cyber girl, 30.0", product.toCSV());
+
 
     }
 
